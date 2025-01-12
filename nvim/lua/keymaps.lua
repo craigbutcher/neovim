@@ -46,4 +46,4 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 
 -- [[ Undo Tree ]]
--- vim.keymap.set("n", "<leader>F5", vim.cmd.Undotreetoggle)
+vim.keymap.set("n", "<leader>ud", vim.cmd.UndotreeToggle)
