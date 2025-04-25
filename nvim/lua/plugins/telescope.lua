@@ -5,11 +5,10 @@
 --
 -- Use the `dependencies` key to specify the dependencies of a particular plugin
 
-return { -- Fuzzy Finder (files, lsp, etc)
-	{
+return {
+	{ -- Fuzzy Finder (files, lsp, etc)
 		"nvim-telescope/telescope.nvim",
 		event = "VimEnter",
-		branch = "0.1.x",
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 			{ -- If encountering errors, see telescope-fzf-native README for installation instructions
@@ -32,7 +31,7 @@ return { -- Fuzzy Finder (files, lsp, etc)
 		},
 		config = function()
 			-- Telescope is a fuzzy finder that comes with a lot of different things that
-			-- it can fuzzy find! It's more than just a 'file finder', it can search
+			-- it can fuzzy find! It's more than just a "file finder", it can search
 			-- many different aspects of Neovim, your workspace, LSP, and more!
 			--
 			-- The easiest way to use Telescope, is to start by doing something like:
