@@ -6,6 +6,9 @@ return {
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
       ensure_installed = {
+        'css',
+        'json',
+        'python',
         'bash',
         'c',
         'diff',
@@ -17,6 +20,7 @@ return {
         'query',
         'vim',
         'vimdoc',
+        'yaml',
       },
       -- Autoinstall languages that are not installed
       auto_install = true,

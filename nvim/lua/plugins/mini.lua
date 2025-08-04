@@ -32,6 +32,12 @@ return { -- Collection of various small independent plugins/modules
         return '%2l:%-2v'
       end
 
+      -- Enable trail/space to highlight spacing/tabs
+      require('mini.trailspace').setup()
+
+      -- Enable starter screen
+      require('mini.starter').setup()
+
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
     end,
