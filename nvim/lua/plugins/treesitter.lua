@@ -6,18 +6,19 @@ return {
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
       ensure_installed = {
-        'css',
-        'json',
-        'python',
         'bash',
         'c',
+        'css',
         'diff',
         'html',
+        'json',
         'lua',
         'luadoc',
         'markdown',
         'markdown_inline',
+        'python',
         'query',
+        'regex',
         'vim',
         'vimdoc',
         'yaml',

@@ -234,7 +234,7 @@ return {
           },
         },
         stylelint_lsp = {
-          configFile = '$HOME/Repos/neovim/.stylelint.rc',
+          configFile = '$HOME/Repos/neovim/.stylelintrc',
           filetypes = { 'css', 'scss' },
           settings = {},
         },

@@ -36,7 +36,21 @@ return { -- Collection of various small independent plugins/modules
       require('mini.trailspace').setup()
 
       -- Enable starter screen
-      require('mini.starter').setup()
+      require('mini.starter').setup {
+        header = table.concat({
+          [[  /\ \▔\___  ___/\   /(●)_ __ ___  ]],
+          [[ /  \/ / _ \/ _ \ \ / / | '_ ` _ \ ]],
+          [[/ /\  /  __/ (_) \ V /| | | | | | |]],
+          [[\_\ \/ \___|\___/ \_/ |_|_| |_| |_|]],
+          [[───────────────────────────────────]],
+        }, '\n'),
+        -- items = {
+        --   { name = '+ Create Note', action = ':lua create', section = '' },
+        -- },
+        footer = table.concat {
+          [[───────────────────────────────────]],
+        },
+      }
 
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
