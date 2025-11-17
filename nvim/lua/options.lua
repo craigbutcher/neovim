@@ -2,6 +2,9 @@
 -- See `:help vim.o`
 -- NOTE: You can change these oions as you wish!
 --  For more options, you can see `:help option-list`
+--
+-- Set terminal gui colors
+vim.opt.termguicolors = true
 
 -- Make line numbers default
 vim.o.number = true
@@ -70,7 +73,18 @@ vim.o.hlsearch = true
 -- Show color columns set at column 80
 vim.o.colorcolumn = '80'
 
+-- Spaces and tabs
 vim.o.shiftwidth = 2
 vim.o.tabstop = 4
+
+-- Fold Column (Treesitter)
+vim.opt.foldcolumn = '0'
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.opt.foldtext = ''
+
+vim.opt.foldnestmax = 3
+vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 99
 
 -- vim: ts=2 sts=2 sw=2 et

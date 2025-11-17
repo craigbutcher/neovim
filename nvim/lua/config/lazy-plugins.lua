@@ -47,6 +47,8 @@ require('lazy').setup({
   require 'plugins/lint',
 
   require 'plugins/autopairs',
+
+  require 'plugins/colorize',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
