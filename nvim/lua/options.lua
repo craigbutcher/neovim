@@ -53,6 +53,19 @@ vim.o.splitbelow = true
 --  and `:help 'listchars'`
 vim.o.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.api.nvim_create_autocmd('BufWritePre', {
+  pattern = '*',
+  callback = function()
+    -- Save cursor position
+    local save_cursor = vim.fn.getpos '.'
+
+    -- remove trailing whitespace
+    vim.cmd [[%s/\s\+$//e]]
+
+    -- restore cursor position
+    vim.fn.setpos('.', save_cursor)
+  end,
+})
 
 -- Preview substitutions live, as you type!
 vim.o.inccommand = 'split'
