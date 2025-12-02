@@ -1,5 +1,6 @@
 --[[
 --
+-- Lifted from Kickstart nvim
 -- This file is not required for your own configuration,
 -- but helps people determine if their system is setup correctly.
 --
