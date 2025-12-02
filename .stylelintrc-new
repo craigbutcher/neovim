@@ -1,0 +1,23 @@
+{
+  "rules": {
+    "selector-list-comma-newline-after": "never-multi-line",
+    "color-no-invalid-hex": true,
+    "declaration-block-no-duplicate-properties": true,
+    "declaration-block-no-redundant-longhand-properties": true,
+    "shorthand-property-no-redundant-values": true,
+    "block-no-empty": true,
+    "property-no-unknown": true,
+    "selector-pseudo-class-no-unknown": true,
+    "selector-pseudo-element-no-unknown": true,
+    "max-nesting-depth": 3,
+    "no-unknown-animations": true,
+    "font-family-no-missing-generic-family-keyword": true,
+    "function-calc-no-unspaced-operator": true,
+    "no-duplicate-selectors": true,
+    "no-descending-specificity": true,
+    "color-hex-length": "short",
+    "function-url-quotes": "always",
+    "length-zero-no-unit": true
+  }
+}
+
