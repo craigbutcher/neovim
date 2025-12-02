@@ -220,9 +220,9 @@ return {
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         -- ts_ls = {},
         --
-        -- emmet_language_server = {
-        --   filetypes = { 'css', 'eruby', 'html', 'javascript', 'javascriptreact', 'less', 'sass', 'scss', 'pug', 'typescriptreact' },
-        -- },
+        emmet_language_server = {
+          filetypes = { 'css', 'eruby', 'html', 'javascript', 'javascriptreact', 'less', 'sass', 'scss', 'pug', 'typescriptreact' },
+        },
         ts_ls = {},
         html = {
           settings = {
@@ -232,11 +232,6 @@ return {
               },
             },
           },
-        },
-        stylelint_lsp = {
-          configFile = '$HOME/Repos/neovim/.stylelintrc',
-          filetypes = { 'css', 'scss' },
-          settings = {},
         },
         lua_ls = {
           -- cmd = { ... },
